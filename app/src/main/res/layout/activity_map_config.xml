@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Mapa"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="#EAEAEA"
+        android:layout_marginBottom="12dp"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/mapTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/normalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vetorial"
+            android:textColor="#555555"
+            android:buttonTint="#FFA500" />
+
+        <RadioButton
+            android:id="@+id/satelliteType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satélite"
+            android:textColor="#555555"
+            android:buttonTint="#FFA500" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo de Navegação"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="#EAEAEA"
+        android:layout_marginBottom="12dp"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/navigationModeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/northUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North Up"
+            android:textColor="#555555"
+            android:buttonTint="#FFA500" />
+
+        <RadioButton
+            android:id="@+id/courseUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Up"
+            android:textColor="#555555"
+            android:buttonTint="#FFA500" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:stateListAnimator="@null" />
+</LinearLayout>
